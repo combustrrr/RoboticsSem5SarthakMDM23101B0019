@@ -1,6 +1,6 @@
 # Robotics Simulation
 
-This repository contains a comprehensive Python implementation of industrial robotic arm simulation with pick-and-place operations and workspace visualization.
+This repository contains a comprehensive Python implementation of industrial robotic arm simulation with pick-and-place operations, workspace visualization, and **3D robotic arm animation**.
 
 ## Features
 
@@ -16,12 +16,19 @@ This repository contains a comprehensive Python implementation of industrial rob
    - Multiple arm configuration displays
    - Workspace metrics and statistics
 
+3. **3D Robotic Arm Animation** (NEW):
+   - PyBullet-based 3D physics simulation
+   - JCB-style excavator arm visualization
+   - Realistic 3D animation with smooth motion
+   - Interactive 3D environment with camera controls
+
 ## Requirements
 
 - Python 3.7+
 - NumPy
 - Matplotlib
 - SciPy
+- PyBullet (for 3D animation)
 
 ## Installation
 
@@ -46,12 +53,34 @@ python main.py
 ```
 
 This will present an interactive menu with options to:
-1. View pick and place animation
-2. Analyze and visualize workspace
-3. Run both demonstrations
-4. Exit
+1. View pick and place animation (2D)
+2. Analyze and visualize workspace (2D)
+3. **3D Robotic Arm Animation (PyBullet)** - NEW!
+4. Run all demonstrations
+5. Exit
 
 ### Individual Modules
+
+#### 3D Robotic Arm Animation
+```python
+from pybullet_arm_animation import PyBulletRoboticArm
+
+# Create 3D robotic arm with JCB-style design
+arm = PyBulletRoboticArm(gui=True)
+
+# Set joint positions
+arm.set_joint_positions([0.5, -0.8, 1.2, 0.3])
+
+# Run digging animation sequence
+arm.animate_digging_sequence(duration=10.0)
+
+# Get end effector position
+position = arm.get_end_effector_position()
+print(f"End effector at: {position}")
+
+# Cleanup
+arm.cleanup()
+```
 
 #### Pick and Place Simulation
 ```python
@@ -87,9 +116,12 @@ viz.analyze_workspace_metrics()
 ## Files Structure
 
 - `robot_arm.py`: Core robotic arm class with kinematics
+- `robotic_arm_4dof.py`: 4-DOF robotic arm implementation
+- `pybullet_arm_animation.py`: 3D robotic arm animation with PyBullet (NEW)
 - `pick_and_place.py`: Pick and place simulation with animation
 - `workspace_visualization.py`: Workspace analysis and visualization
-- `main.py`: Main demonstration script
+- `main.py`: Main demonstration script with menu
+- `test_3d_animation.py`: Testing for 3D animation functionality
 - `requirements.txt`: Python dependencies
 
 ## Technical Details

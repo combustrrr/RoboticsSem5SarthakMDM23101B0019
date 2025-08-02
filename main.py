@@ -23,13 +23,14 @@ def main():
     
     while True:
         print("\nSelect demonstration:")
-        print("1. Pick and Place Animation")
-        print("2. Workspace Visualization")
-        print("3. Both demonstrations")
-        print("4. Exit")
+        print("1. Pick and Place Animation (2D)")
+        print("2. Workspace Visualization (2D)")
+        print("3. 3D Robotic Arm Animation (PyBullet)")
+        print("4. All demonstrations")
+        print("5. Exit")
         
         try:
-            choice = input("\nEnter your choice (1-4): ").strip()
+            choice = input("\nEnter your choice (1-5): ").strip()
         except KeyboardInterrupt:
             print("\nExiting...")
             sys.exit(0)
@@ -39,13 +40,16 @@ def main():
         elif choice == "2":
             demo_workspace_visualization(robot)
         elif choice == "3":
+            demo_3d_animation()
+        elif choice == "4":
             demo_pick_and_place(robot)
             demo_workspace_visualization(robot)
-        elif choice == "4":
+            demo_3d_animation()
+        elif choice == "5":
             print("Goodbye!")
             break
         else:
-            print("Invalid choice. Please enter 1, 2, 3, or 4.")
+            print("Invalid choice. Please enter 1, 2, 3, 4, or 5.")
 
 
 def demo_pick_and_place(robot):
@@ -115,6 +119,33 @@ def demo_workspace_visualization(robot):
         visualizer.plot_workspace(show_unreachable=True, save_fig=True)
     except Exception as e:
         print(f"Visualization error: {e}")
+        print("This might be due to display limitations in the environment.")
+
+
+def demo_3d_animation():
+    """Demonstrate 3D robotic arm animation using PyBullet"""
+    print("\n" + "=" * 40)
+    print("3D ROBOTIC ARM ANIMATION DEMONSTRATION")
+    print("=" * 40)
+    
+    try:
+        # Import the 3D animation module
+        from pybullet_arm_animation import PyBulletRoboticArm
+        
+        print("Initializing 3D PyBullet simulation...")
+        print("This will open a new 3D visualization window.")
+        print("Watch the JCB-style robotic arm perform digging motions!")
+        
+        # Create and run the 3D simulation
+        arm_sim = PyBulletRoboticArm(gui=True)
+        arm_sim.run_interactive_demo()
+        arm_sim.cleanup()
+        
+    except ImportError as e:
+        print(f"PyBullet import error: {e}")
+        print("Please ensure PyBullet is installed: pip install pybullet")
+    except Exception as e:
+        print(f"3D Animation error: {e}")
         print("This might be due to display limitations in the environment.")
 
 
