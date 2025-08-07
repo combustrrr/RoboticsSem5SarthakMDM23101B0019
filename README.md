@@ -1,6 +1,6 @@
 # Robotics Semester 5 - Sarthak MDM23101B0019
 
-A comprehensive robotics simulation system featuring assignment work and an interactive 3D robotic arm mini project.
+A comprehensive robotics simulation system featuring Assignment 1 work including robotic arm kinematics, workspace analysis, and advanced 3D simulations.
 
 ## 🎯 Quick Start
 
@@ -31,29 +31,11 @@ cd assignment1/partc && python main.py
 │   ├── docs/                     # Assignment documentation
 │   ├── showcase_materials/       # Presentation materials
 │   └── README.md                 # Assignment overview
-├── mini_project/                  # Interactive 3D Robotic Arm
-│   ├── src/                      # Core source code
-│   ├── assets/                   # Textures, models, CAD files
-│   ├── demos/                    # Video demonstrations
-│   ├── docs/                     # Technical documentation
-│   ├── main.py                   # Main entry point
-│   └── README.md                 # Project documentation
 ├── requirements.txt              # Python dependencies
+├── main.py                       # Assignment launcher
 └── README.md                     # This file
 ```
 
-## 🚀 Quick Start
-
-### Assignment 1
-```bash
-cd assignment1
-python main.py
-```
-
-### Mini Project - Interactive 3D Robotic Arm
-```bash
-cd mini_project
-python main.py
 ## 📋 Assignment 1 Components
 
 ### Part B - Basic Robotic Arm Simulation
@@ -69,27 +51,10 @@ python main.py
 - Performance analysis and optimization
 - Real-time physics simulation
 
-## 🎮 Mini Project Features
-
-### Interactive 3D JCB Robotic Arm
-- **4-DOF Control**: Boom, Stick, Bucket, Base Rotation
-- **Multiple Interfaces**: PyBullet GUI, web-based, matplotlib
-- **VFX-Quality Rendering**: Professional lighting and materials
-- **CAD Integration**: Support for IGS, STEP, SLDPRT formats
-- **Realistic Textures**: Photographic material enhancement
-- **Automated Sequences**: Complete excavation demonstrations
-
-### Technical Specifications
-- **Max Reach**: 8.0 meters
-- **Max Dig Depth**: 6.2 meters
-- **Bucket Capacity**: 1.2 cubic meters
-- **Real-Time Physics**: 240Hz simulation, 60Hz rendering
-
 ## 🎬 Demonstrations
 
 The repository includes comprehensive video demonstrations:
 - Assignment completion showcases
-- Interactive robotic arm control demos
 - Technical analysis visualizations
 - Professional presentation materials
 
@@ -119,19 +84,11 @@ Core dependencies:
 - Develop real-time control systems
 - Create professional simulation demonstrations
 
-### Mini Project Goals
-- Build interactive 3D robotic arm simulation
-- Integrate professional CAD files
-- Implement VFX-quality rendering
-- Create computer graphics project demonstrations
-- Showcase virtual robot prototyping capabilities
-
 ## 📖 Documentation
 
-Detailed documentation is available in each component:
+Detailed documentation is available in:
 - **Assignment 1**: `assignment1/README.md`
-- **Mini Project**: `mini_project/README.md`
-- **Technical Guides**: Available in respective `docs/` directories
+- **Technical Guides**: Available in `assignment1/docs/` directory
 
 ## 🏆 Features Highlights
 
@@ -142,25 +99,16 @@ Detailed documentation is available in each component:
 ✅ Performance comparison studies  
 ✅ Professional documentation and analysis  
 
-### Mini Project
-✅ Interactive 4-DOF JCB robotic arm  
-✅ Multiple control interfaces (GUI, web, CLI)  
-✅ Professional CAD file integration  
-✅ VFX-quality rendering and materials  
-✅ Comprehensive demonstration package  
+## 🚀 Advanced Features
 
----
-
-This repository represents a complete robotics simulation ecosystem, combining academic assignment requirements with professional-quality interactive demonstrations suitable for computer graphics projects and virtual robot prototyping.
 - **Robotic Kinematics**: Forward and inverse kinematic solutions
 - **Motion Planning**: Path planning and trajectory generation
 - **Computer Vision**: Real-time object detection and classification
 - **Physics Simulation**: 3D physics with PyBullet integration
 - **Software Engineering**: Modular design with comprehensive testing
 
-## 📖 Documentation
+## 📖 Technical Reports
 
-### Technical Reports
 - **Part B**: `assignment1/partb/ANALYSIS_REPORT.md`
 - **Part C**: `assignment1/partc/PART_C_ANALYSIS_REPORT.md`  
 - **3D Animation**: `assignment1/partc/3D_ANIMATION_README.md`
@@ -210,17 +158,18 @@ This project is developed for educational purposes as part of Assignment 1.
 
 ---
 
-**Note**: This comprehensive robotic arm simulation suite provides both educational value and professional-quality demonstrations suitable for computer graphics projects and video presentations.
+**Note**: This comprehensive robotic arm simulation suite provides educational value and professional-quality demonstrations for robotics coursework.
+
+## 🚀 Quick Start
+
 ```bash
 python main.py
 ```
 
 This will present an interactive menu with options to:
-1. View pick and place animation (2D)
-2. Analyze and visualize workspace (2D)
-3. **3D Robotic Arm Animation (PyBullet)** - NEW!
-4. Run all demonstrations
-5. Exit
+1. Part B: Basic Robotic Arm Simulation (2D)
+2. Part C: Advanced Features (4-DOF, Conveyor, 3D)
+3. Exit
 
 ### Individual Modules
 
@@ -228,13 +177,13 @@ This will present an interactive menu with options to:
 ```python
 from pybullet_arm_animation import PyBulletRoboticArm
 
-# Create 3D robotic arm with JCB-style design
+# Create 3D robotic arm with enhanced design
 arm = PyBulletRoboticArm(gui=True)
 
 # Set joint positions
 arm.set_joint_positions([0.5, -0.8, 1.2, 0.3])
 
-# Run digging animation sequence
+# Run animation sequence
 arm.animate_digging_sequence(duration=10.0)
 
 # Get end effector position
@@ -280,7 +229,7 @@ viz.analyze_workspace_metrics()
 
 - `robot_arm.py`: Core robotic arm class with kinematics
 - `robotic_arm_4dof.py`: 4-DOF robotic arm implementation
-- `pybullet_arm_animation.py`: 3D robotic arm animation with PyBullet (NEW)
+- `pybullet_arm_animation.py`: 3D robotic arm animation with PyBullet
 - `pick_and_place.py`: Pick and place simulation with animation
 - `workspace_visualization.py`: Workspace analysis and visualization
 - `main.py`: Main demonstration script with menu
