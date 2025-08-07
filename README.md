@@ -24,6 +24,7 @@ python web_interactive_arm.py
 ```
 
 This will start a local HTTP server and open the web interface in your browser.
+*Note: The web interface requires additional dependencies (open3d, trimesh) for full 3D visualization.*
 
 ## Features
 
@@ -47,6 +48,10 @@ Core requirements:
 - scipy
 - opencv-python
 - pybullet
+
+Optional dependencies for advanced 3D web interface:
+- open3d
+- trimesh
 
 ## Project Structure
 
