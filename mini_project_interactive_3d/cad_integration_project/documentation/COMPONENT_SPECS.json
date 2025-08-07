@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "name": "JCB CAD Integration Project",
+    "creator": "Raushan Tiwari",
+    "source": "GrabCAD - jcb-back-arm-1",
+    "total_files": 16,
+    "file_formats": [
+      "SLDPRT",
+      "IGS",
+      "STEP",
+      "SLDASM",
+      "PNG"
+    ]
+  },
+  "components": {
+    "Body.SLDPRT": {
+      "name": "Main Body/Chassis",
+      "description": "JCB yellow main chassis with operator cab",
+      "dimensions": "2.5m x 1.8m x 1.2m",
+      "weight": "1000kg",
+      "material": "JCB Yellow (#F2D919)"
+    },
+    "Arm.SLDPRT": {
+      "name": "Boom Arm",
+      "description": "Main boom arm with hydraulic mounting points",
+      "dimensions": "3.0m x 0.3m x 0.4m",
+      "weight": "800kg",
+      "material": "JCB Orange (#F27319)"
+    },
+    "Cylinder.SLDPRT": {
+      "name": "Hydraulic Cylinder",
+      "description": "Hydraulic actuator with piston rod",
+      "dimensions": "\u00d8160mm x 1.5m stroke",
+      "weight": "150kg",
+      "material": "Steel (weathered)"
+    },
+    "Bucket.SLDPRT": {
+      "name": "Excavator Bucket",
+      "description": "Digging bucket with cutting teeth",
+      "dimensions": "1.0m width x 0.8m depth",
+      "weight": "300kg",
+      "material": "Hardened steel"
+    },
+    "Backhoe.IGS": {
+      "name": "Complete Assembly",
+      "description": "Full JCB backhoe assembly",
+      "dimensions": "8.0m reach x 6.2m dig depth",
+      "weight": "14,500kg",
+      "material": "Mixed (yellow/orange/steel)"
+    }
+  },
+  "cad_files": [
+    "Backhoe.IGS",
+    "Backhoe.STEP",
+    "Backhoe.x_tx_t",
+    "Body.SLDPRT",
+    "Arm.SLDPRT",
+    "Cylinder.SLDPRT",
+    "Pin.SLDPRT",
+    "Piston.SLDPRT",
+    "Stabilizer.SLDPRT",
+    "Tension Bar.SLDPRT",
+    "Bucket.SLDPRT",
+    "Feather.SLDPRT",
+    "Backhoe.SLDASM",
+    "JCB Arm.png",
+    "JCB Arm 1.png",
+    "JCB Arm 2.png"
+  ],
+  "simulation_specs": {
+    "physics_engine": "PyBullet",
+    "rendering": "OpenGL with professional lighting",
+    "control_frequency": "240 Hz",
+    "joint_limits": {
+      "boom": {
+        "min": -0.5,
+        "max": 1.2,
+        "unit": "radians"
+      },
+      "stick": {
+        "min": -1.8,
+        "max": 0.5,
+        "unit": "radians"
+      },
+      "bucket": {
+        "min": -1.5,
+        "max": 1.0,
+        "unit": "radians"
+      },
+      "rotation": {
+        "min": -3.14159,
+        "max": 3.14159,
+        "unit": "radians"
+      }
+    }
+  }
+}
