@@ -1,46 +1,45 @@
-# 🎬 Quick Demonstration Guide
+# 🎬 Quick Demonstration Guide - Assignment 1
 
 ## 🚀 Instant Demo Commands
 
-### 1. Main Interactive System (Recommended)
+### 1. Main Assignment Launcher (Recommended)
 ```bash
-cd mini_project_interactive_3d
-python enhanced_cad_interactive_arm.py
+python main.py
 ```
-**Result**: Full 3D interactive JCB arm with sliders and camera controls
+**Result**: Interactive menu to launch Part B or Part C demonstrations
 
-### 2. Web Interface Demo  
+### 2. Part B - Basic Robotic Arm Demo  
 ```bash
-cd mini_project_interactive_3d
-python web_interactive_arm.py
+cd assignment1/partb
+python main.py
 ```
-**Result**: Browser-based control interface at localhost:8000
+**Result**: 2D robotic arm simulation with pick and place operations
 
-### 3. Basic Interactive System
+### 3. Part C - Advanced Features Demo
 ```bash
-cd mini_project_interactive_3d  
-python interactive_3d_robotic_arm.py
+cd assignment1/partc  
+python main.py
 ```
-**Result**: Core PyBullet system with manual controls
+**Result**: 4-DOF arm, 3D PyBullet simulation, conveyor sorting system
 
-## 🎯 What to Show in Your Computer Graphics Demo
+## 🎯 What to Show in Your Assignment Demo
 
-1. **Launch the main system** - `python enhanced_cad_interactive_arm.py`
-2. **Highlight interactive controls** - Move boom/stick/bucket sliders
-3. **Switch camera views** - Show multiple professional angles
-4. **Demonstrate physics** - Show realistic arm movement and constraints
-5. **Show technical quality** - Point out VFX-grade lighting and textures
+1. **Launch the assignment system** - `python main.py`
+2. **Demonstrate Part B features** - 2D kinematics, workspace analysis
+3. **Show Part C capabilities** - 3D simulation, 4-DOF control, conveyor system
+4. **Highlight technical analysis** - Performance plots and analysis reports
+5. **Show documentation quality** - Professional technical reports
 
 ## 📹 Video/GIF Materials Available
 
-- `enhanced_jcb_interactive_demo.gif` (22MB) - Complete demonstration
-- `interactive_jcb_robotic_arm_demo.gif` (14MB) - Technical showcase
-- Various PNG technical analysis images
+- Various PNG technical analysis images in `assignment1/assets/images/`
+- 3D animation screenshots in `assignment1/partc/`
+- Performance analysis plots and visualizations
 
 ## 🎤 Presentation Talking Points
 
-- "Real CAD files from professional mechanical engineer"
-- "4-DOF interactive control with immediate feedback"  
-- "VFX-quality rendering suitable for professional demonstrations"
-- "240Hz physics simulation for smooth realistic movement"
-- "Multi-platform support including web interface"
+- "Complete robotic arm kinematics implementation"
+- "Forward and inverse kinematics solutions"  
+- "Comprehensive workspace analysis and optimization"
+- "Real-time 3D physics simulation with PyBullet"
+- "Professional documentation and analysis reports"
