@@ -1,6 +1,6 @@
 # Robotics Semester 5 - Sarthak MDM23101B0019
 
-A comprehensive robotics simulation system featuring assignment work and an interactive 3D robotic arm mini project.
+A comprehensive robotics assignment suite featuring robotic arm kinematics, advanced rotation mathematics, workspace analysis, and simulation systems.
 
 ## 🎯 Quick Start
 
@@ -9,89 +9,66 @@ A comprehensive robotics simulation system featuring assignment work and an inte
 python main.py
 ```
 
-### Run Individual Parts
+### Run Individual Assignments
 ```bash
-# Part B: Basic Robotic Arm Simulation
-cd assignment1/partb && python main.py
+# Assignment 1: Robotic Arm Simulation Suite
+cd assignment1/partb && python main.py  # Part B: Basic simulation
+cd assignment1/partc && python main.py  # Part C: Advanced features
 
-# Part C: Advanced Features (4-DOF, Conveyor, 3D Animation)
-cd assignment1/partc && python main.py
+# Assignment 2: Advanced Robotics Mathematics  
+cd assignment2/partb && python main.py  # Part B: Rotation matrices
 ```
 
 ## 📁 Repository Structure
 
 ```
 .
-├── assignment1/                    # Assignment 1 (Part B & C)
+├── assignment1/                    # Assignment 1: Robotic Arm Simulation Suite
 │   ├── partb/                     # Basic robotic arm simulation (2D)
 │   ├── partc/                     # Advanced features (4-DOF, conveyor, 3D)
 │   ├── assets/                    # Assignment assets
-│   │   ├── images/               # Analysis plots and diagrams  
-│   │   └── videos/               # Demonstration GIFs
-│   ├── docs/                     # Assignment documentation
-│   ├── showcase_materials/       # Presentation materials
-│   └── README.md                 # Assignment overview
-├── mini_project/                  # Interactive 3D Robotic Arm
-│   ├── src/                      # Core source code
-│   ├── assets/                   # Textures, models, CAD files
-│   ├── demos/                    # Video demonstrations
-│   ├── docs/                     # Technical documentation
-│   ├── main.py                   # Main entry point
-│   └── README.md                 # Project documentation
-├── requirements.txt              # Python dependencies
-└── README.md                     # This file
+│   ├── docs/                      # Assignment documentation
+│   └── README.md                  # Assignment 1 overview
+├── assignment2/                    # Assignment 2: Advanced Robotics Mathematics
+│   ├── partb/                     # Rotation matrices and transformations
+│   └── README.md                  # Assignment 2 overview
+├── requirements.txt               # Python dependencies
+├── main.py                        # Assignment suite launcher
+└── README.md                      # This file
 ```
 
-## 🚀 Quick Start
+## 📋 Assignment Components
 
-### Assignment 1
-```bash
-cd assignment1
-python main.py
-```
+### Assignment 1: Robotic Arm Simulation Suite
 
-### Mini Project - Interactive 3D Robotic Arm
-```bash
-cd mini_project
-python main.py
-## 📋 Assignment 1 Components
-
-### Part B - Basic Robotic Arm Simulation
+#### Part B - Basic Robotic Arm Simulation
 - 2D robotic arm kinematics
 - Pick and place operations
 - Workspace analysis and visualization
 - Basic trajectory planning
 
-### Part C - Advanced Features
+#### Part C - Advanced Features
 - 4-DOF robotic arm control
 - 3D PyBullet simulation
 - Conveyor belt sorting system
 - Performance analysis and optimization
 - Real-time physics simulation
 
-## 🎮 Mini Project Features
+### Assignment 2: Advanced Robotics Mathematics
 
-### Interactive 3D JCB Robotic Arm
-- **4-DOF Control**: Boom, Stick, Bucket, Base Rotation
-- **Multiple Interfaces**: PyBullet GUI, web-based, matplotlib
-- **VFX-Quality Rendering**: Professional lighting and materials
-- **CAD Integration**: Support for IGS, STEP, SLDPRT formats
-- **Realistic Textures**: Photographic material enhancement
-- **Automated Sequences**: Complete excavation demonstrations
-
-### Technical Specifications
-- **Max Reach**: 8.0 meters
-- **Max Dig Depth**: 6.2 meters
-- **Bucket Capacity**: 1.2 cubic meters
-- **Real-Time Physics**: 240Hz simulation, 60Hz rendering
+#### Part B - Rotation Matrices and End-Effector Position
+- Individual rotation matrix calculations (X, Y, Z axes)
+- Composite rotation transformations
+- End-effector position analysis
+- Generic rotation sequence system
+- Mathematical verification and testing
 
 ## 🎬 Demonstrations
 
-The repository includes comprehensive video demonstrations:
-- Assignment completion showcases
-- Interactive robotic arm control demos
-- Technical analysis visualizations
-- Professional presentation materials
+The repository includes comprehensive demonstrations:
+- **Assignment 1**: Robotic arm simulation showcases and technical analysis
+- **Assignment 2**: Rotation matrix calculations and mathematical verification
+- Professional presentation materials and analysis reports
 
 ## 🔧 Dependencies
 
@@ -100,11 +77,11 @@ pip install -r requirements.txt
 ```
 
 Core dependencies:
-- `pybullet` - Physics simulation
-- `numpy` - Numerical computing
+- `numpy` - Numerical computing and matrix operations
 - `matplotlib` - Plotting and visualization
-- `opencv-python` - Image processing
-- `pillow` - Image manipulation
+- `scipy` - Scientific computing
+- `opencv-python` - Image processing (Assignment 1)
+- `pybullet` - Physics simulation (Assignment 1)
 
 ## 🎯 Academic Context
 
@@ -114,67 +91,74 @@ Core dependencies:
 
 ### Assignment Objectives
 - Demonstrate understanding of robotic arm kinematics
+- Master rotation matrix mathematics and transformations
 - Implement forward and inverse kinematics solutions
 - Design and analyze robotic workspace
 - Develop real-time control systems
 - Create professional simulation demonstrations
 
-### Mini Project Goals
-- Build interactive 3D robotic arm simulation
-- Integrate professional CAD files
-- Implement VFX-quality rendering
-- Create computer graphics project demonstrations
-- Showcase virtual robot prototyping capabilities
-
 ## 📖 Documentation
 
-Detailed documentation is available in each component:
+Detailed documentation is available in:
 - **Assignment 1**: `assignment1/README.md`
-- **Mini Project**: `mini_project/README.md`
-- **Technical Guides**: Available in respective `docs/` directories
+- **Assignment 2**: `assignment2/README.md`
+- **Technical Guides**: Available in respective assignment directories
 
 ## 🏆 Features Highlights
 
-### Assignment Work
+### Assignment 1: Robotic Arm Simulation
 ✅ Complete 2D and 3D robotic arm implementations  
 ✅ Forward and inverse kinematics solutions  
 ✅ Workspace analysis and optimization  
 ✅ Performance comparison studies  
 ✅ Professional documentation and analysis  
 
-### Mini Project
-✅ Interactive 4-DOF JCB robotic arm  
-✅ Multiple control interfaces (GUI, web, CLI)  
-✅ Professional CAD file integration  
-✅ VFX-quality rendering and materials  
-✅ Comprehensive demonstration package  
+### Assignment 2: Advanced Mathematics
+✅ Complete rotation matrix implementation  
+✅ Composite transformation system  
+✅ Mathematical verification and testing  
+✅ Generic rotation sequence calculator  
+✅ Comprehensive documentation and examples  
 
----
+## 🚀 Advanced Features
 
-This repository represents a complete robotics simulation ecosystem, combining academic assignment requirements with professional-quality interactive demonstrations suitable for computer graphics projects and virtual robot prototyping.
+### Assignment 1
 - **Robotic Kinematics**: Forward and inverse kinematic solutions
 - **Motion Planning**: Path planning and trajectory generation
 - **Computer Vision**: Real-time object detection and classification
 - **Physics Simulation**: 3D physics with PyBullet integration
 - **Software Engineering**: Modular design with comprehensive testing
 
-## 📖 Documentation
+### Assignment 2
+- **Rotation Mathematics**: Fundamental 3D rotation theory
+- **Matrix Operations**: Efficient numerical computation
+- **Transformation Analysis**: End-effector position calculations
+- **Mathematical Verification**: Property validation and testing
+- **Generic Framework**: Flexible rotation sequence system
 
-### Technical Reports
+## 📖 Technical Reports
+
+### Assignment 1
 - **Part B**: `assignment1/partb/ANALYSIS_REPORT.md`
 - **Part C**: `assignment1/partc/PART_C_ANALYSIS_REPORT.md`  
 - **3D Animation**: `assignment1/partc/3D_ANIMATION_README.md`
 - **Complete Guide**: `assignment1/README.md`
 
+### Assignment 2
+- **Part B**: `assignment2/partb/README.md`
+- **Mathematical Analysis**: Comprehensive rotation matrix documentation
+- **Testing Reports**: Validation and verification results
+
 ### Generated Assets
 - Workspace visualization plots
 - Performance analysis charts  
 - 3D animation screenshots
+- Rotation transformation visualizations
 - Comparative analysis results
 
 ## 🔧 Usage Examples
 
-### Basic Robotic Arm (Part B)
+### Assignment 1: Basic Robotic Arm (Part B)
 ```python
 from robot_arm import RoboticArm
 from workspace_visualization import WorkspaceVisualizer
@@ -186,7 +170,7 @@ visualizer.calculate_workspace()
 visualizer.plot_workspace()
 ```
 
-### Advanced Features (Part C)
+### Assignment 1: Advanced Features (Part C)
 ```python
 # 4-DOF Arm Control
 from robotic_arm_4dof import create_4dof_arm_configuration
@@ -204,37 +188,61 @@ system = SortingSystem()
 system.add_object("large", "red", 1.0)
 ```
 
+### Assignment 2: Rotation Matrices (Part B)
+```python
+from assignment2.partb.rotation_matrices import RotationMatrixCalculator
+
+# Initialize calculator
+calc = RotationMatrixCalculator()
+
+# Solve Assignment 2 Part B problem
+results = calc.solve_assignment_2_part_b()
+
+# Custom rotation sequence
+rotations = [('x', 30), ('y', 45), ('z', 60)]
+final_pos = calc.transform_position([2, 3, 4], rotations)
+
+# Individual rotation matrices
+matrix_x = calc.rotation_matrix_x(30)
+matrix_y = calc.rotation_matrix_y(45)
+matrix_z = calc.rotation_matrix_z(60)
+```
+
 ## 📝 License
 
-This project is developed for educational purposes as part of Assignment 1.
+This project is developed for educational purposes as part of robotics coursework.
 
 ---
 
-**Note**: This comprehensive robotic arm simulation suite provides both educational value and professional-quality demonstrations suitable for computer graphics projects and video presentations.
+**Note**: This comprehensive robotics assignment suite provides educational value and professional-quality demonstrations for advanced robotics coursework, covering both practical simulation and theoretical mathematical foundations.
+
+## 🚀 Quick Start
+
 ```bash
 python main.py
 ```
 
 This will present an interactive menu with options to:
-1. View pick and place animation (2D)
-2. Analyze and visualize workspace (2D)
-3. **3D Robotic Arm Animation (PyBullet)** - NEW!
-4. Run all demonstrations
-5. Exit
+1. Assignment 1: Robotic Arm Simulation Suite
+   - Part B: Basic Robotic Arm Simulation (2D)
+   - Part C: Advanced Features (4-DOF, Conveyor, 3D)
+2. Assignment 2: Advanced Robotics Mathematics  
+   - Part B: Rotation Matrices and End-Effector Position
+3. Exit
 
 ### Individual Modules
 
-#### 3D Robotic Arm Animation
+#### Assignment 1: 3D Robotic Arm Animation
 ```python
 from pybullet_arm_animation import PyBulletRoboticArm
 
-# Create 3D robotic arm with JCB-style design
+# Create 3D robotic arm with enhanced design
 arm = PyBulletRoboticArm(gui=True)
 
 # Set joint positions
 arm.set_joint_positions([0.5, -0.8, 1.2, 0.3])
 
-# Run digging animation sequence
+# Run animation sequence
 arm.animate_digging_sequence(duration=10.0)
 
 # Get end effector position
@@ -245,7 +253,7 @@ print(f"End effector at: {position}")
 arm.cleanup()
 ```
 
-#### Pick and Place Simulation
+#### Assignment 1: Pick and Place Simulation
 ```python
 from robot_arm import RoboticArm
 from pick_and_place import PickAndPlaceSimulation
@@ -262,55 +270,78 @@ sim.add_target(-4.0, 1.0)  # Target location
 sim.run_simulation()
 ```
 
-#### Workspace Visualization
+#### Assignment 2: Rotation Matrix Analysis
 ```python
-from robot_arm import RoboticArm
-from workspace_visualization import WorkspaceVisualizer
+from assignment2.partb.rotation_matrices import RotationMatrixCalculator
 
-# Create robot
-robot = RoboticArm([3.0, 2.5, 1.5])
+# Create calculator
+calc = RotationMatrixCalculator()
 
-# Visualize workspace
-viz = WorkspaceVisualizer(robot)
-viz.plot_workspace()
-viz.analyze_workspace_metrics()
+# Solve the specific assignment problem
+results = calc.solve_assignment_2_part_b()
+
+# Create custom rotation sequence
+rotations = [('x', 30), ('y', 45), ('z', 60)]
+final_position = calc.transform_position([2, 3, 4], rotations)
+
+# Get individual matrices
+rx = calc.rotation_matrix_x(30)
+ry = calc.rotation_matrix_y(45)  
+rz = calc.rotation_matrix_z(60)
 ```
 
 ## Files Structure
 
+### Assignment 1
 - `robot_arm.py`: Core robotic arm class with kinematics
 - `robotic_arm_4dof.py`: 4-DOF robotic arm implementation
-- `pybullet_arm_animation.py`: 3D robotic arm animation with PyBullet (NEW)
+- `pybullet_arm_animation.py`: 3D robotic arm animation with PyBullet
 - `pick_and_place.py`: Pick and place simulation with animation
 - `workspace_visualization.py`: Workspace analysis and visualization
 - `main.py`: Main demonstration script with menu
 - `test_3d_animation.py`: Testing for 3D animation functionality
+
+### Assignment 2
+- `rotation_matrices.py`: Core rotation matrix implementation
+- `main.py`: Interactive demonstration interface
+- `test_rotation_matrices.py`: Comprehensive test suite
+
+### Common
 - `requirements.txt`: Python dependencies
+- `main.py`: Master assignment launcher
 
 ## Technical Details
 
-### Robotic Arm Model
+### Assignment 1: Robotic Arm Model
 - 2D planar arm with configurable number of joints
 - Forward kinematics using transformation matrices
 - Inverse kinematics using numerical optimization
 - Joint limit enforcement
 
-### Pick and Place Algorithm
+### Assignment 1: Pick and Place Algorithm
 1. Path planning between configurations
 2. Smooth interpolation for animation
 3. Object manipulation simulation
 4. Real-time visualization
 
-### Workspace Analysis
+### Assignment 1: Workspace Analysis
 - Brute force reachability testing
 - Theoretical vs. actual reach comparison
 - Workspace boundary visualization
 - Performance metrics calculation
 
+### Assignment 2: Rotation Mathematics
+- Individual X, Y, Z axis rotation matrices
+- Composite rotation calculations
+- End-effector position transformations
+- Mathematical property verification
+
 ## Examples
 
-The simulation includes several pre-configured examples:
+The simulation suite includes several pre-configured examples:
 - 2-link arm workspace analysis
 - 3-link arm pick and place operations
 - Joint-limited robot configurations
 - Multiple object manipulation scenarios
+- Rotation matrix verification tests
+- Composite transformation demonstrations
